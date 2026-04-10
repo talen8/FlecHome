@@ -3,7 +3,6 @@ site:
   favicon: /favicon.png
   description: Talen 的个人主页，一个专注技术、乐于探索的代码爱好者！
   keywords: [个人主页, 博客, 技术, 生活, 前端开发, Vue, Nuxt, 开源]
-  language: zh-CN
   author: Talen
   url: https://talen.top
 
@@ -73,6 +72,7 @@ sites:
 projects:
   - talen8/StaticSiteMenu
   - talen8/FlecBlog
+  - talen8/FlecHome
 
 # 时间线配置
 timeline:

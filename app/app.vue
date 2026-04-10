@@ -30,7 +30,7 @@ useSeoMeta({
 useHead({
   title: site.title,
   htmlAttrs: {
-    lang: site.language
+    lang: "zh-CN"
   },
   meta: [
     { name: 'keywords', content: keywords },

@@ -89,7 +89,6 @@ export interface SiteMeta {
   favicon: string
   description: string
   keywords: string[]
-  language: string
   author: string
   url: string
 }
@@ -171,7 +170,6 @@ export const DEFAULT_SITE_CONFIG: SiteConfig = {
     favicon: '/favicon.png',
     description: '',
     keywords: [],
-    language: 'zh-CN',
     author: '',
     url: ''
   },
