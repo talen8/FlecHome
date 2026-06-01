@@ -3,7 +3,7 @@
     <SectionsHeroSection :projects-count="projects.length" :sites-count="sites.length" :articles-count="articlesTotal"
       :hero="hero" :author="siteAuthor" :articles-label="heroArticlesLabel" />
 
-    <SectionsProjectsSection :projects="projects" />
+    <SectionsProjectsSection :projects="projects" :github-url="siteGithubUrl" />
 
     <SectionsSitesSection :sites="sites" />
 
@@ -54,6 +54,7 @@ const articlesConfig = ref<ArticlesConfig>({
   postList: []
 })
 const siteAuthor = ref('')
+const siteGithubUrl = ref('')
 const articlesSectionTitle = ref<'近期文章' | '置顶文章'>('近期文章')
 const heroArticlesLabel = ref<'发布文章' | '置顶文章'>('发布文章')
 const articlesFromRss = ref(false)
@@ -79,6 +80,7 @@ const mapStaticArticles = (items: ArticleConfigItem[]): Article[] => {
 onMounted(async () => {
   const config = await loadConfig()
   siteAuthor.value = config.site.author
+  siteGithubUrl.value = config.site.githubUrl
   hero.value = config.hero
   articlesConfig.value = config.articles
   sites.value = config.sites

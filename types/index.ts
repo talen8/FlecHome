@@ -91,6 +91,7 @@ export interface SiteMeta {
   keywords: string[]
   author: string
   url: string
+  githubUrl: string
 }
 
 /**
@@ -171,7 +172,8 @@ export const DEFAULT_SITE_CONFIG: SiteConfig = {
     description: '',
     keywords: [],
     author: '',
-    url: ''
+    url: '',
+    githubUrl: ''
   },
   footer: {
     startYear: new Date().getFullYear(),

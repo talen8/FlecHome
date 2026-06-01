@@ -5,6 +5,7 @@ site:
   keywords: [个人主页, 博客, 技术, 生活, 前端开发, Vue, Nuxt, 开源]
   author: Talen
   url: https://talen.top
+  githubUrl: https://github.com/talen8
 
 # 首页首屏配置
 hero:
@@ -67,15 +68,30 @@ sites:
     url: https://blog.talen.top/
     icon: news-line
     tag: 博客
+  - name: FlecHub
+    description: FlecBlog 项目文档与门户网站
+    url: https://hub.flec.top/
+    icon: guide-line
+    tag: 文档
+  - name: 服务状态
+    description: 全站服务健康状态一览
+    url: https://status.flec.top/
+    icon: pulse-line
+    tag: 监控
 
 # 项目配置
 projects:
   - talen8/StaticSiteMenu
   - talen8/FlecBlog
   - talen8/FlecHome
+  - talen8/FlecStatus
 
 # 时间线配置
 timeline:
+  - date: 2026年6月
+    title: 【FlecStatus】项目完成开发
+    description: 基于 Uptimer 二开的全站服务状态监控系统
+    icon: ri-pulse-line
   - date: 2026年3月
     title: 个人主页更名为「TALEN」
     description: 重构为 Nuxt，在原有风格基础上重新设计

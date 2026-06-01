@@ -48,7 +48,7 @@
     <div v-else class="projects-redirect">
       <p class="redirect-text">更多精彩项目尽在 GitHub</p>
       <p class="redirect-hint">项目加载失败，请检查网络连接</p>
-      <a :href="githubUrl" target="_blank" class="view-all-btn">前往 GitHub 查看</a>
+      <a :href="props.githubUrl" target="_blank" class="view-all-btn">前往 GitHub 查看</a>
     </div>
   </section>
 </template>
@@ -58,11 +58,10 @@ import type { GithubRepo } from '@@/types'
 
 interface Props {
   projects: GithubRepo[]
+  githubUrl: string
 }
 
-defineProps<Props>()
-
-const githubUrl = 'https://github.com/flechazo'
+const props = defineProps<Props>()
 
 /**
  * 格式化数字，大于1000的显示为 k 格式
